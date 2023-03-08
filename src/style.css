@@ -1,0 +1,99 @@
+* {
+    font-family: 'Raleway', sans-serif;
+  }
+  :root {
+    --gray1: #333333;
+    --gray2: #555555;
+    --gray3: #cccccc;
+    --gray4: #aaaaaa;
+  
+    --dominant1: #344B59; 
+    --dominant2: #7ABEA7; 
+    --accent1: #CDE5D8;
+    --accent2: #AED4D5;
+    --accent3: #E4E5E9;
+    --accent4: #B77650; 
+  }
+
+  /* Navbar styling */
+.navbar {
+    box-shadow: 0 -1px var(--accent1), 0 0px 6px var(--gray4);
+}
+
+.logo {
+    list-style: none;
+    background-color: var(--accent2);
+    color: var(--dominant1);
+    font-size: 18px;
+    font-weight: 800;
+    padding: 20px 10px 20px 10px;
+    border-radius: 50%;
+    border: 2px solid var(--dominant1);
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: var(--accent2);
+}
+
+.navbar-light .nav-item .nav-link {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--dominant1);
+}
+
+.navbar-light .nav-item.active .nav-link {
+    font-weight: 800;
+    color: var(--dominant1);
+    border-bottom: 1px solid var(--accent2);
+}
+
+.navbar-light .nav-item:hover .nav-link {
+    background-color: var(--accent2);
+    color: var(--dominant1);
+}
+
+/* about me */
+.name {
+    border-bottom: 2px solid var(--accent4) ;
+    color: var(--dominant1);
+}
+
+.main-intro h2 {
+    color: var(--accent4);
+    font-weight: 800;
+}
+
+.main-intro p {
+    font-size: 18px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.socials {
+    margin: 0;
+    padding: 0;
+}
+
+.social-item {
+    display: inline;
+    list-style: none;  
+    padding-right: 0.5em; 
+    font-size: 1em;
+}
+
+.social-logo #icon svg{
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.developer-image {
+    max-width: 100%;
+}
+
+.hand-wave {
+    font-size: 30px;
+}
+
+
+  
+  
