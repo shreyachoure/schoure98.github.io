@@ -1,13 +1,10 @@
 ## Portfolio Website
 
-### To run the project on local system:
-npm start
-
 ### Deployment Link: 
 
 
 ### Resources
 #### Images and Icons
-Favicon: ICONS8 (https://icons8.com/) 
-Icons: Box-Icons (https://boxicons.com/)
-Illustrations: unDraw (https://undraw.co/illustrations)
+1. Favicon: ICONS8 (https://icons8.com/) 
+2. Icons: Box-Icons (https://boxicons.com/)
+3. Illustrations: unDraw (https://undraw.co/illustrations)
