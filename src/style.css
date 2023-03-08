@@ -1,7 +1,8 @@
 * {
     font-family: 'Raleway', sans-serif;
-  }
-  :root {
+    scroll-behavior: smooth;
+}
+:root {
     --gray1: #333333;
     --gray2: #555555;
     --gray3: #cccccc;
@@ -12,12 +13,17 @@
     --accent1: #CDE5D8;
     --accent2: #AED4D5;
     --accent3: #E4E5E9;
-    --accent4: #B77650; 
-  }
+    --accent4: #D96846; 
+}
 
-  /* Navbar styling */
+/* Navbar styling */
 .navbar {
     box-shadow: 0 -1px var(--accent1), 0 0px 6px var(--gray4);
+}
+
+.logo-box {
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
@@ -38,7 +44,7 @@
 .navbar-light .nav-item .nav-link {
     font-weight: 600;
     font-size: 18px;
-    color: var(--dominant1);
+    color: var(--accent4);
 }
 
 .navbar-light .nav-item.active .nav-link {
@@ -56,11 +62,13 @@
 .name {
     border-bottom: 2px solid var(--accent4) ;
     color: var(--dominant1);
+    cursor: pointer;
 }
 
 .main-intro h2 {
     color: var(--accent4);
     font-weight: 800;
+    cursor: pointer;
 }
 
 .main-intro p {
@@ -94,6 +102,20 @@
     font-size: 30px;
 }
 
+/* experience component */
+.exp-card-header {
+    background-color: var(--accent2) !important;
 
-  
+}
+.exp-card-link {
+    text-decoration: none;
+    color: var(--dominant1);
+    font-weight: 600;
+    font-size: 18px;
+}
+.exp-card-link:hover {
+    color: var(--dominant1);
+}
+
+
   
