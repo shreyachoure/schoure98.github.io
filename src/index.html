@@ -31,7 +31,7 @@
 		<nav class="navbar navbar-expand-md navbar-light">
 			<div class="container">
 				<ul class="logo-box">
-					<li class="logo" href="#">&#8826;SC&#8725;&#8827;</li>
+					<li class="logo">&#8826;SC&#8725;&#8827;</li>
 				</ul>
 
 				<button
@@ -47,12 +47,14 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="#home">About</a></li>
 						<li class="nav-item">
-							<a class="nav-link" href="#about">Experience</a>
+							<a class="nav-link" href="#about">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#skills">Project</a>
+							<a class="nav-link" href="#experience">Experience</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects">Project</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#contact">Contact</a>
@@ -63,7 +65,7 @@
 		</nav>
 
 		<!-- Component: About Me -->
-		<div class="container my-4" id="about">
+		<section class="container my-5" id="about">
 			<div class="d-flex about row">
 				<div class="main-intro col-lg-7 my-auto">
 					<h2>
@@ -156,9 +158,9 @@
 					/>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- Experience section component -->
-		<div class="container my-5" id="experience">
+		<section class="container my-5" id="experience">
 			<h3>Work Experience</h3>
 			<div id="accordion">
 				<div class="card">
@@ -210,13 +212,13 @@
 					<div id="collapseTwo" class="collapse" data-parent="#accordion">
 						<div class="card-body">
 							<ol>
-								<li>
+								<li class="exp-desc">
 									Designed and developed mobile responsive web application for
 									Digital Marketing firm which included blogging, testimonials,
 									forms and resulted in 30% more customer satisfaction after
 									deploying the application.
 								</li>
-								<li>
+								<li class="exp-desc">
 									Built an E-commerce specific application with online selling,
 									appointment booking, learning activities and live customer
 									support which boosted the company profit by 15%.
@@ -226,7 +228,7 @@
 									user involvement by 5% resulting engagement conversion rate to
 									8%.
 								</li>
-								<li>
+								<li class="exp-desc">
 									Tested accessibility of web applications using multiple
 									approaches that boosted application experience by 10% and
 									helped to improve performance to 100.
@@ -236,7 +238,12 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+		<!-- Projects section -->
+		<section class="container my-5" id="projects">
+			<h3>Projects</h3>
+			<div class="project-container"></div>
+		</section>
 	</body>
 	<!-- Javascript -->
 	<script src="./script.js"></script>
