@@ -35,7 +35,7 @@ const addToDOM = (project) => {
 	//project image
 	let image = document.createElement("img");
 	image.src = project.image;
-	image.alt = `Project image ${project.projectName}`;
+	image.alt = `Project image ${project.subject}`;
 	image.classList.add("project-image", "card-img-top");
 	card.append(image);
 

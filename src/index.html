@@ -13,7 +13,6 @@
 			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 			crossorigin="anonymous"
 		/>
-
 		<!-- raleway font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +20,12 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&display=swap"
 			rel="stylesheet"
 		/>
-
+		<!-- EmailJS -->
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+		></script>
+		<script type="text/javascript" src="./sendEmail.js"></script>
 		<!-- icons -->
 		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 	</head>
@@ -159,9 +163,10 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- Experience section component -->
 		<section class="container my-5" id="experience">
-			<h3>Work Experience</h3>
+			<h3 class="section-header">Work Experience</h3>
 			<div id="accordion">
 				<div class="card">
 					<div class="exp-card-header card-header py-4">
@@ -239,14 +244,67 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- Projects section -->
 		<section class="container my-5" id="projects">
-			<h3>Projects</h3>
+			<h3 class="section-header">Academic Projects</h3>
 			<div class="project-container"></div>
+		</section>
+
+		<!-- contact section -->
+		<section class="container" id="contact">
+			<h3 class="section-header">Let's Connect!</h3>
+			<form class="bg-light mx-auto rounded p-5 form" id="email-form">
+				<div class="row form-group mb-3">
+					<label class="col-sm-3 col-form-label" for="name"> Name: </label>
+					<div class="col-sm-9">
+						<input class="form-control" type="text" id="name" name="name" />
+					</div>
+				</div>
+				<div class="row form-group mb-3">
+					<label class="col-sm-3 col-form-label" for="email"> Email: </label>
+					<div class="col-sm-9">
+						<input
+							class="col-sm form-control"
+							type="email"
+							id="email"
+							name="email"
+						/>
+					</div>
+				</div>
+				<div class="row form-group mb-3">
+					<label class="col-sm-3 col-form-label" for="message">
+						Message:
+					</label>
+					<div class="col-sm-9">
+						<textarea
+							class="col-sm form-control"
+							type="message"
+							id="message"
+							name="message"
+							placeholder="Please submit any feedback or message for me!"
+						></textarea>
+					</div>
+				</div>
+
+				<div
+					class="form-group buttons form-buttons d-flex justify-content-center"
+				>
+					<button
+						class="btn submit-button mx-2"
+						type="submit"
+						id="submit-button"
+					>
+						Submit
+					</button>
+					<button class="btn reset-button" type="reset">Reset</button>
+				</div>
+			</form>
 		</section>
 	</body>
 	<!-- Javascript -->
-	<script src="./script.js"></script>
+
+	<!-- Bootstrap script -->
 	<script
 		src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -262,4 +320,5 @@
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"
 	></script>
+	<script type="text/javascript" src="./script.js"></script>
 </html>
