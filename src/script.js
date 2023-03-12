@@ -74,3 +74,12 @@ const displayProjects = (ProjectData) => {
 };
 
 displayProjects(ProjectData);
+
+// Footer Component
+
+const footer = document.querySelector(".footer");
+let footerText = document.createElement("p");
+footerText.textContent = `Developed in ${new Date().getFullYear()} by Shreya Choure`;
+footerText.style.padding = "20px";
+footerText.style.marginBottom = "0";
+footer.append(footerText);
