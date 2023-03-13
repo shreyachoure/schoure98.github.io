@@ -3,6 +3,7 @@
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
 }
+
 :root {
     --gray1: #333333;
     --gray2: #555555;
@@ -49,7 +50,7 @@
     color: var(--dominant1) !important;
 }
 
-.navbar-light .nav-item.active .nav-link {
+.navbar-light .nav-item:active .nav-link {
     font-weight: 800;
     color: var(--dominant1);
     border-bottom: 1px solid var(--accent2);
@@ -67,10 +68,15 @@
     cursor: pointer;
 }
 
-.main-intro h2 {
+.main-intro h1 {
     color: var(--accent4);
+    font-size: 30px;
     font-weight: 800;
     cursor: pointer;
+}
+.main-intro h2 {
+    color: var(--dominant1);
+    font-weight: 600;
 }
 
 .main-intro p {
@@ -99,6 +105,7 @@
 
 .developer-image {
     max-width: 100%;
+    height: auto;
 }
 
 .hand-wave {
@@ -110,9 +117,11 @@
     color: var(--dominant1);
     font-weight: 800;
 }
+
 .section-header::first-letter {
     font-size: 150%;
 }
+
 .heading {
     border-bottom: 2px solid var(--accent4);
 }
@@ -120,8 +129,8 @@
 /* experience component */
 .exp-card-header {
     background-color: var(--accent2) !important;
-
 }
+
 .exp-desc {
     text-align: justify;
 }
@@ -132,6 +141,7 @@
     font-weight: 600;
     font-size: 18px;
 }
+
 .exp-card-link:hover {
     color: var(--dominant1);
 }
@@ -143,15 +153,23 @@
     justify-content: space-between;
     gap: 10px;
 }
+
 .project-card {
     width: calc(33.33% - 10px);
 }
-.project-image {
-    max-height: 180px;
+
+.project-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
-.project-desc {
+
+.project-card .card-body .project-desc {
+    flex-grow: 1;
     font-size: 16px;
 }
+
 .github-project {
     font-size: 14px;
     margin-bottom: 2rem;
@@ -159,16 +177,9 @@
     color: var(--dominant1);
     font-weight: 600;
 }
-@media (min-width: 576px) and (max-width: 768px){
-    .project-card {
-      width: calc(50% - 10px);
-    }
-  }
-  
-@media (max-width: 575px) {
-    .project-card {
-      width: calc(100%);
-    }
+
+.github-project:hover {
+    color: var(--accent4);
 }
 
 /* contact form */
@@ -180,7 +191,6 @@
     height: 50px;
     font-weight: 600;
 }
-
 .submit-button {
     background-color: var(--accent2);
     color: var(--dominant1);
@@ -205,4 +215,17 @@
     background-color: var(--accent2);
     color: var(--dominant1);
     font-weight: 600;
+}
+
+/* media queries for mobile and tablets */
+@media (min-width: 576px) and (max-width: 768px){
+    .project-card {
+      width: calc(50% - 10px);
+    }
+  }
+  
+@media (max-width: 575px) {
+    .project-card {
+      width: calc(100%);
+    }
 }

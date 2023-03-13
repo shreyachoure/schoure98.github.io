@@ -29,14 +29,6 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&display=swap"
 			rel="stylesheet"
 		/>
-		<!-- EmailJS -->
-		<script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-		></script>
-		<script type="text/javascript" src="./sendEmail.js"></script>
-		<!-- icons -->
-		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 	</head>
 
 	<body>
@@ -44,7 +36,7 @@
 		<nav class="navbar navbar-expand-md navbar-light">
 			<div class="container">
 				<ul class="logo-box">
-					<li class="logo">&#8826;SC&#8725;&#8827;</li>
+					<li class="logo" title="logo">&#8826;SC&#8725;&#8827;</li>
 				</ul>
 
 				<button
@@ -54,20 +46,20 @@
 					data-target="#navbarSupportedContent"
 					aria-controls="navbarSupportedContent"
 					aria-expanded="false"
-					aria-label="Toggle navigation"
+					aria-label="Menu"
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="#about">About</a>
+							<a class="nav-link" href="#about" aria-current="page">About</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#experience">Experience</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#projects">Project</a>
+							<a class="nav-link" href="#projects">Projects</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#contact">Contact</a>
@@ -81,33 +73,34 @@
 		<section class="container my-5" id="about">
 			<div class="d-flex about row">
 				<div class="main-intro col-lg-7 my-auto">
-					<h2>
+					<h1>
 						Hi There <span class="hand-wave">👋</span>, I'm
 						<span class="name">Shreya Choure!</span>
-					</h2>
+					</h1>
+					<h2>About Me</h2>
 					<p>
 						Computer Science graduate student at Portland State University. With
 						a strong passion in technology, I have developed deep understanding
 						on programming fundamentals and software engineering principles.
-						<br /><br />
-
+					</p>
+					<p>
 						I have developed projects demonstrating knowledge in Python,
 						databases, web development and machine learning. I had an
 						opportunity to work with IBM, India in Application Integration
 						domain which helped to grow both personally and professionally.
-						<br /><br />
-
+					</p>
+					<p>
 						As I prepare to graduate in March 2024, I am currently seeking
 						internship opportunities to apply skills in academic career and gain
 						practical industry experience.
 					</p>
-					<h6>Connect with me on</h6>
+					<p>Connect with me on</p>
 					<ul class="socials">
 						<li class="social-item">
 							<a
 								href="../Resume-Shreya Choure.pdf"
 								download
-								aria-label="resume download"
+								aria-label="download my resume"
 							>
 								<box-icon
 									class="download"
@@ -118,7 +111,7 @@
 							</a>
 						</li>
 						<li class="social-item">
-							<a href="mailto:schoure@pdx.edu" aria-label="gmail connect"
+							<a href="mailto:schoure@pdx.edu" aria-label="send me an email"
 								><box-icon
 									class="social-logo"
 									type="logo"
@@ -128,7 +121,9 @@
 							</a>
 						</li>
 						<li class="social-item">
-							<a href="https://github.com/schoure98" aria-label="github account"
+							<a
+								href="https://github.com/schoure98"
+								aria-label="visit my github account"
 								><box-icon
 									class="social-logo"
 									type="logo"
@@ -140,7 +135,7 @@
 						<li class="social-item">
 							<a
 								href="https://www.linkedin.com/in/shreya-choure/"
-								aria-label="linkedin account"
+								aria-label="visit my linkedin account"
 								><box-icon
 									class="social-logo"
 									type="logo"
@@ -152,7 +147,7 @@
 						<li class="social-item">
 							<a
 								href="https://www.instagram.com/shreyachoure/"
-								aria-label="instagram account"
+								aria-label="visit my instagram account"
 								><box-icon
 									class="social-logo"
 									type="logo"
@@ -167,7 +162,7 @@
 					<img
 						class="developer-image"
 						src="../images/shreya.png"
-						alt="developer snapshot"
+						alt="snapshot of Shreya"
 					/>
 				</div>
 			</div>
@@ -175,12 +170,12 @@
 
 		<!-- Experience section component -->
 		<section class="container my-5" id="experience">
-			<h3 class="section-header">
+			<h2 class="section-header">
 				<span class="heading">Work Experience</span>
-			</h3>
+			</h2>
 			<div id="accordion">
 				<div class="card">
-					<div class="exp-card-header card-header py-4">
+					<h3 class="exp-card-header card-header py-4">
 						<a
 							class="exp-card-link card-link"
 							data-toggle="collapse"
@@ -188,35 +183,35 @@
 						>
 							Associate System Engineer, IBM
 						</a>
-					</div>
+					</h3>
 					<div id="collapseOne" class="collapse show" data-parent="#accordion">
 						<div class="card-body">
-							<ol>
-								<li>
+							<ul>
+								<li class="exp-desc">
 									Collaborated with a team of 4 to maintain application for SAP
 									Support on WebMethods integration platform, handling the load
 									of 38000 transactions every day.
 								</li>
-								<li>
+								<li class="exp-desc">
 									Optimized daily monitoring with Linux script and java code
 									optimization, bug resolving which reduced transaction failure
 									rate by 60%.
 								</li>
-								<li>
+								<li class="exp-desc">
 									Developed and presented platform specific troubleshooting
 									documentation and codebook used for training 10 new hires.
 								</li>
-								<li>
+								<li class="exp-desc">
 									Revamped software patching methodology and decreased system
 									downtime by 20% with customized scripts which improved quality
 									check by 25%.
 								</li>
-							</ol>
+							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="card my-3">
-					<div class="exp-card-header card-header py-4">
+					<h3 class="exp-card-header card-header py-4">
 						<a
 							class="exp-card-link card-link"
 							data-toggle="collapse"
@@ -224,10 +219,10 @@
 						>
 							Fullstack Developer, Kerkar Media
 						</a>
-					</div>
+					</h3>
 					<div id="collapseTwo" class="collapse" data-parent="#accordion">
 						<div class="card-body">
-							<ol>
+							<ul>
 								<li class="exp-desc">
 									Designed and developed mobile responsive web application for
 									Digital Marketing firm which included blogging, testimonials,
@@ -239,7 +234,7 @@
 									appointment booking, learning activities and live customer
 									support which boosted the company profit by 15%.
 								</li>
-								<li>
+								<li class="exp-desc">
 									Created ad specific static templates and forms which increased
 									user involvement by 5% resulting engagement conversion rate to
 									8%.
@@ -249,7 +244,7 @@
 									approaches that boosted application experience by 10% and
 									helped to improve performance to 100.
 								</li>
-							</ol>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -258,22 +253,28 @@
 
 		<!-- Projects section -->
 		<section class="container my-5" id="projects">
-			<h3 class="section-header">
+			<h2 class="section-header">
 				<span class="heading">Academic Projects</span>
-			</h3>
+			</h2>
 			<div class="project-container"></div>
 		</section>
 
 		<!-- contact section -->
 		<section class="container" id="contact">
-			<h3 class="section-header">
+			<h2 class="section-header">
 				<span class="heading">Let's Connect!</span>
-			</h3>
+			</h2>
 			<form class="bg-light mx-auto rounded p-5 form" id="email-form">
 				<div class="row form-group mb-3">
 					<label class="col-sm-3 col-form-label" for="name"> Name: </label>
 					<div class="col-sm-9">
-						<input class="form-control" type="text" id="name" name="name" />
+						<input
+							class="form-control"
+							type="text"
+							id="name"
+							name="name"
+							
+						/>
 					</div>
 				</div>
 				<div class="row form-group mb-3">
@@ -284,6 +285,7 @@
 							type="email"
 							id="email"
 							name="email"
+							
 						/>
 					</div>
 				</div>
@@ -310,7 +312,7 @@
 						type="submit"
 						id="submit-button"
 					>
-						Submit
+						Send Message
 					</button>
 					<button class="btn reset-button" type="reset">Reset</button>
 				</div>
@@ -321,6 +323,14 @@
 		<footer class="container-fluid footer text-center mt-5"></footer>
 	</body>
 	<!-- Javascript -->
+	<!-- EmailJS -->
+	<script
+		type="text/javascript"
+		src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+	></script>
+	<script type="text/javascript" src="./sendEmail.js"></script>
+	<!-- icons -->
+	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 	<!-- Bootstrap script -->
 	<script

@@ -25,38 +25,40 @@ const ProjectData = [
 	},
 ];
 
-let projectContainer = document.querySelector(".project-container");
+const projectContainer = document.querySelector(".project-container");
 
-const addToDOM = (project) => {
+const createProjectCards = (project) => {
 	//project card
-	let card = document.createElement("div");
+	const card = document.createElement("div");
 	card.classList.add("project-card", "card");
 
 	//project image
-	let image = document.createElement("img");
+	const image = document.createElement("img");
 	image.src = project.image;
-	image.alt = `Project image ${project.subject}`;
+	image.alt = `Image of ${project.subject} project`;
+	image.setAttribute("aria-label", `Image of ${project.subject} project`);
 	image.classList.add("project-image", "card-img-top");
 	card.append(image);
 
 	//project body
-	let cardBody = document.createElement("div");
+	const cardBody = document.createElement("div");
 	cardBody.classList.add("card-body");
 
 	//project name
-	let projectName = document.createElement("h6");
+	const projectName = document.createElement("h3");
 	projectName.textContent = project.title;
-	projectName.classList.add("card-title");
+	projectName.style.fontSize = "18px";
+	projectName.style.color = "var(--dominant1)";
 	cardBody.append(projectName);
 
 	//project description
-	let projectDesc = document.createElement("p");
+	const projectDesc = document.createElement("p");
 	projectDesc.textContent = project.description;
-	projectDesc.classList.add("project-desc", "card-text");
+	projectDesc.classList.add("project-desc", "card-text", "mb-2");
 	cardBody.append(projectDesc);
 
 	//project link
-	let projectLink = document.createElement("a");
+	const projectLink = document.createElement("a");
 	projectLink.textContent = "View on Github";
 	projectLink.href = project.github;
 	projectLink.target = "_blank";
@@ -69,7 +71,7 @@ const addToDOM = (project) => {
 
 const displayProjects = (ProjectData) => {
 	ProjectData.forEach((project) => {
-		addToDOM(project);
+		createProjectCards(project);
 	});
 };
 
