@@ -77,6 +77,7 @@
 .main-intro h2 {
     color: var(--dominant1);
     font-weight: 600;
+    font-size: 22px;
 }
 
 .main-intro p {
@@ -87,7 +88,7 @@
 }
 
 .socials {
-    margin: 0;
+    margin-left: 10px;
     padding: 0;
 }
 
@@ -225,6 +226,9 @@
   }
   
 @media (max-width: 575px) {
+    .main-intro h1 {
+        font-size: 24px;
+    }
     .project-card {
       width: calc(100%);
     }
