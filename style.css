@@ -5,11 +5,7 @@
 }
 
 :root {
-    --gray1: #333333;
-    --gray2: #555555;
-    --gray3: #cccccc;
-    --gray4: #aaaaaa;
-  
+    --gray: #aaaaaa;
     --dominant1: #344B59; 
     --dominant2: #7ABEA7; 
     --accent1: #CDE5D8;
@@ -20,7 +16,7 @@
 
 /* Navbar styling */
 .navbar {
-    box-shadow: 0 -1px var(--accent1), 0 0px 6px var(--gray4);
+    box-shadow: 0 -1px var(--accent1), 0 0px 6px var(--gray);
 }
 
 .logo-box {
@@ -65,7 +61,6 @@
 .name {
     border-bottom: 2px solid var(--accent4) ;
     color: var(--dominant1);
-    cursor: pointer;
 }
 
 .main-intro h1 {
@@ -83,7 +78,6 @@
 .main-intro p {
     font-size: 18px;
     line-height: 1.5em;
-    text-align: justify;
     cursor: pointer;
 }
 
@@ -136,15 +130,15 @@
     text-align: justify;
 }
 
-.exp-card-link {
+.btn-link{
     text-decoration: none;
-    color: var(--dominant1);
-    font-weight: 600;
-    font-size: 18px;
+    color: var(--dominant1) !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
 }
 
-.exp-card-link:hover {
-    color: var(--dominant1);
+.btn-link:hover {
+    color: var(--dominant1) !important;
 }
 
 /* projects component */
