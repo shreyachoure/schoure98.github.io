@@ -81,6 +81,15 @@
     cursor: pointer;
 }
 
+.resume {
+    color: var(--dominant1);
+    font-weight: 600;
+}
+
+.resume:hover {
+    color: var(--accent4);
+}
+
 .socials {
     margin-left: 10px;
     padding: 0;
@@ -93,14 +102,8 @@
     font-size: 1em;
 }
 
-.social-logo #icon svg{
-    width: 100px !important;
-    height: 100px !important;
-}
-
 .developer-image {
     max-width: 100%;
-    height: auto;
 }
 
 .hand-wave {
@@ -221,7 +224,7 @@
   
 @media (max-width: 575px) {
     .main-intro h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
     .project-card {
       width: calc(100%);

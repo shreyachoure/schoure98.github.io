@@ -35,8 +35,11 @@ const createProjectCards = (project) => {
 	//project image
 	const image = document.createElement("img");
 	image.src = project.image;
-	image.alt = `Image of ${project.subject} project`;
-	image.setAttribute("aria-label", `Image of ${project.subject} project`);
+	image.alt = `An illustration of ${project.subject} project`;
+	image.setAttribute(
+		"aria-label",
+		`An illustration of ${project.subject} project`
+	);
 	image.classList.add("project-image", "card-img-top");
 	card.append(image);
 
